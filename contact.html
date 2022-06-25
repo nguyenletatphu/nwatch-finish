@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NWatch</title>
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <!-- Font awesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <!-- header section starts -->
+        <header>
+
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+
+            <a href="index.html" class="logo">NWatch</a>
+            
+            <nav class="navbar">
+                <ul class="main-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="sp"><a href="TrangSanPham.html">Sản phẩm</a>
+                        <ul class="sub-menu">
+                            <li><a href="TrangSanPham.html#nam">Đồng hồ Nam</a></li>
+                            <li><a href="TrangSanPham.html#nu">Đồng hồ Nữ</a></li>
+                            <li><a href="TrangSanPham.html#doi">Đồng hồ Đôi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="introduction.html">Giới thiệu</a></li>
+                    <li><a href="index.html#brand">Thương hiệu</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <i class='bx bxs-cart-alt' id="cart-icon"></i>                
+                <a href="login.html" class="fas fa-user"></a>
+                
+                <!-- Cart -->
+                <div class="cart">
+                    <h2 class="cart-title">GIỎ HÀNG</h2>
+                    <hr>
+                    <!-- Content -->
+                    <div class="cart-content">
+                       
+                    </div>
+                    <!-- Total -->
+                    <div class="total">
+                        <div class="total-title">Tổng tiền</div>
+                        <div class="total-price">0đ</div>
+                    </div>
+                    <!-- Buy Button -->
+                    <button type="button" class="btn-buy" >Mua ngay</button>
+                    <!-- Cart Close -->
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+            </div>
+        </header>
+        <!-- header section ends -->
+
+        <!-- contact section starts -->
+        <section class="contact" id="lh">
+
+            <h1 class="heading"><span>Liên hệ </span></h1>
+
+            <div class="row">
+                <form action="">
+                    <input type="text" placeholder="Họ tên" class="box">
+                    <input type="email" placeholder="Email" class="box">
+                    <input type="number" placeholder="Số điện thoại" class="box">
+                    <textarea name="" class="box" placeholder="Lời nhắn" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Gửi" class="btn">
+                </form>
+
+                <div class="image">
+                    <img src="image/contact1.webp" alt="">
+
+                </div>
+            </div>
+        </section>
+        <!-- contact section ends -->
+
+        <!-- footer section starts -->
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Liên kết nhanh</h3>
+                    <a href="#home">Trang chủ</a>
+                    <a href="#gt">Giới thiệu</a>
+                    <a href="#nam">Đồng hồ Nam</a>
+                    <a href="#nu">Đồng hồ Nữ</a>
+                    <a href="#đg">Đánh giá</a>
+                    <a href="#lh">Liên hệ</a>
+                </div>
+
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href="#">Tài khoản</a>
+                    <a href="#">Đơn hàng</a>
+                    <a href="#">Yêu thích</a>
+                </div>
+
+                <div class="box">
+                    <h3>Các địa điểm</h3>
+                    <a href="#">VietNam</a>
+                    <a href="#">USA</a>
+                    <a href="#">Japan</a>
+                    <a href="#">France</a>
+                </div>
+
+                <div class="box">
+                    <h3>Thông tin </h3>
+                    <a href="#">+123-456-7890</a>
+                    <a href="#">nwatch@gmail.com</a>
+                    <a href="#">Đà Nẵng</a>
+                </div>
+
+                <img src="image/footer1.png" alt="" style="width:50%; align-items: center;">
+
+            </div>
+
+            <div class="credit"> created by <span>MyNa & NgocNhu</span></div>
+
+        </section>
+        <!-- footer section ends -->
+        <script src="/main.js"></script>
+    </body>
+</html>

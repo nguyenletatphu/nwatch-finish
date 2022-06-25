@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NWatch</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- header section starts -->
+        <header>
+
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+
+            <a href="index.html" class="logo">NWatch</a>
+            
+            <nav class="navbar">
+                <ul class="main-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="sp"><a href="TrangSanPham.html">Sản phẩm</a>
+                        <ul class="sub-menu">
+                            <li><a href="TrangSanPham.html#nam">Đồng hồ Nam</a></li>
+                            <li><a href="TrangSanPham.html#nu">Đồng hồ Nữ</a></li>
+                            <li><a href="TrangSanPham.html#doi">Đồng hồ Đôi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="introduction.html">Giới thiệu</a></li>
+                    <li><a href="index.html#brand">Thương hiệu</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <i class='bx bxs-cart-alt' id="cart-icon"></i>
+                <a href="#" class="fas fa-user"></a>
+                
+                <!-- Cart -->
+                <div class="cart">
+                    <h2 class="cart-title">GIỎ HÀNG</h2>
+                    <hr>
+                    <!-- Content -->
+                    <div class="cart-content">
+                       
+                    </div>
+                    <!-- Total -->
+                    <div class="total">
+                        <div class="total-title">Tổng tiền</div>
+                        <div class="total-price">0đ</div>
+                    </div>
+                    <!-- Buy Button -->
+                    <button type="button" class="btn-buy" >Mua ngay</button>
+                    <!-- Cart Close -->
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+
+            </div>
+        </header>
+        <!-- header section ends -->
+        
+        <!-- Form Login -->
+        <div class="login-form">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="buttn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Đăng nhập</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Đăng ký</button>
+                </div>
+                <div class="social-icons">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-google"></i>
+                    <i class="fa fa-twitter "></i>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="Tên đăng nhập" required>
+                    <input type="text" class="input-field" placeholder="Mật khẩu" required>
+                    <input type="checkbox" class="check-box"><span>Nhớ mật khẩu</span>
+                    <button type="submit" class="submit-btn">Đăng nhập</button>
+                </form>
+
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="Tên đăng nhập" required>
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="text" class="input-field" placeholder="Mật khẩu" required>
+                    <input type="text" class="input-field" placeholder="Số điện thoại" required>
+                    <br><br>
+                    <button type="submit" class="submit-btn">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("buttn");
+
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "150px";
+            }
+
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+        </script>
+        <!--  -->
+        <script src="/main.js"></script>
+    </body>
+</html>
