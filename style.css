@@ -134,6 +134,7 @@ header .fa-bars{
     cursor: pointer;
     border: .1rem solid rgba(0, 0, 0, .3);
     display: block;
+    position: relative;
 }
 /* Heart */
 .heart {
